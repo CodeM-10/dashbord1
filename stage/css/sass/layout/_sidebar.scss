@@ -1,0 +1,82 @@
+.page{
+    .sidebar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 250px;
+        background-color: #222e3c;
+        transition: margin-left .35s ease-in-out,left .35s ease-in-out,margin-right .35s ease-in-out,right .35s ease-in-out;
+        &.no-sidebar{
+            left: -250px;
+        }
+    }
+    .logo_content{
+        font-weight: bold;
+        padding-bottom: 10px;
+        font-size: 2rem;
+        color: #FFF;
+        margin-top:40px;
+    }
+
+    .nav_list {
+        // All link in nav
+        li{
+            a{
+                position: relative;
+                display: flex;
+                align-items: center;
+                margin: 0 15px;
+                padding: 20px;
+                height: 50px;
+                line-height: 50px;
+                width: 100%;
+                color: #7f8892;
+                &:hover{
+                    text-decoration: none;
+                    color: #8ca0b4;
+                }
+                &:focus {
+                    color: #222e3c;
+                    background-color: #f3f6fa;
+                    border-radius: 12px 0 0 12px;
+                }  
+            }//a
+        } //li
+        
+
+            //** ** ** ** **// 
+            //Main link
+    
+
+
+        #iconnav {
+            height: 50px;
+            min-width: 50px;
+            border-radius: 12px;
+            line-height: 50px;
+            text-align: center;
+        }
+        
+    }// .nav_list
+
+
+    #logout {
+        position: absolute;
+        padding-left: 60px;
+        color: #FFF;
+        bottom: 10px;
+        transform: translateX(-50%);
+        min-width: 50px;
+        line-height: 50px;
+        font-size: 30px;
+        border-radius: 12px;
+    }
+
+
+
+
+}//end page 
+
+/** To My (( line-height:????? ,,position Using ???
+min-width?? **/

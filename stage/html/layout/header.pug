@@ -1,0 +1,55 @@
+.header 
+    i.fa.fa-duotone.fa-arrow-right-arrow-left.fa-lg.toggle-sidebar
+    //Notification
+    .dropdown.notifications-container
+        i.fa.fa-bell-o.fa-lg.toggle-notifications#notifications( data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')        
+        .dropdown-menu.drppdownmenuNotifi(aria-labelledby='notifications')
+            .noti-head 
+                |Notifications 
+                span 50
+            .noti-content 
+                ul.list-unstyled 
+                    li 
+                        i.fa.fa-envelope-o.fa-lg
+                        | You Got Email Form BlBlBl
+                    li 
+                        i.fa.fa-money.fa-lg
+                        | You Got money Form BlBlBl
+                    li 
+                        i.fa.fa-thumbs-o-up.fa-lg
+                        | You Got Email Form BlBlBl
+                    li 
+                        i.fa.fa-envelope-o.fa-lg
+                        | You Got Email Form BlBlBl                        
+            .noti-foot.text-center: a(href="#") View All Notifications  
+
+    // Users icon
+    .dropdown.usermenu-container
+        .username#usermenu(data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')  
+            img.avatar.rounded-circle(src="imgs/avatar.jpg", alt="user avatar")
+            span.user Mesho 
+            i.fa.fa-angle-down.fa-lg       
+        .dropdown-menu.drppdowsermenuUser.dropdown-menu-right(aria-labelledby='usermenu') 
+            .user-info 
+                h3 Mesho 
+                p Premium Member 
+            hr
+            ul.activities-list.list-unstyled 
+                 li Add Comment 
+                 li created post 
+            hr
+            .row.user-links
+              .col
+                 .link-box 
+                   i.fa.fa-gear.fa-lg.fa-fw 
+                   span Settings
+              .col
+                  .link-box
+                    i.fa.fa-user.fa-lg.fa-fw 
+                    span My Profile
+              .col
+                 .link-box 
+                    i.fa.fa-power-off.fa-lg.fa-fw 
+                    span logout
+
+

@@ -1,0 +1,19 @@
+- var pageTitle ="Home page";
+doctype html
+html(lang="en")
+    head
+        include layout/meta
+        include layout/style
+
+    body 
+        .page.homepage
+            include components/setting-box.pug 
+            include layout/sidebar.pug 
+            .content-area 
+                include layout/header.pug 
+                .container-fluid
+                    .content
+                    include components/page-head.pug 
+    include layout/scripts
+    
+             

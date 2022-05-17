@@ -1,0 +1,143 @@
+.header{
+    background-color: #fff;
+    color:#292c33;
+    padding: 20px;  
+    border-bottom: 0;
+    box-shadow: 0 0 2rem 0 rgb(33 37 41 / 10%);  
+    .toggle-sidebar{
+        cursor: pointer;
+    }    
+    
+    .notifications-container{
+        display:inline-block;
+        margin-right: 20px;
+        color: #6c757d;
+        .toggle-notifications{
+            padding: 10px;
+            font-size: 18px;
+            cursor: pointer;
+            
+    
+        }//    .notifications-container{
+        .drppdownmenuNotifi{
+                min-width: 600px;
+                border: none;
+                padding: 0;
+                top: 10px !important;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    top: -20px;
+                    left: 8.5px;
+                    border-style: solid;
+                    border-width: 10px;
+                    border-color: transparent transparent #333 transparent;
+                }
+                .noti-head {
+                    background-color: #333;
+                    padding: 15px;
+                    color: #fff;
+                    span{
+                        float: right;
+                    }
+
+                }
+                .noti-content{
+                    padding: 20px;
+                    ul{
+                        margin: 0;
+                        li{
+                            padding: 10px;
+                            i{
+                                background-color: #eee;
+                                padding: 10px;
+                                border-radius: 50%;
+                                width: 45px;
+                                height: 45px;
+                                line-height:26px;
+                                text-align: center;
+                                margin-right: 10px;
+                                position: relative;
+                                top: -2px;
+
+                            }
+                        }
+                    }
+
+                }
+                .noti-foot{
+                    a {
+                        display: block;
+                        padding: 10px;
+                        border-top:1px solid #eee;
+                        &:hover{
+                            text-decoration:none;
+                        }
+                    }
+
+                }
+            } // .drppdownmenuNotifi{
+
+    }
+    .usermenu-container{
+        float: right;
+        .username{
+            cursor: pointer;
+            .avatar{
+                width: 40px;
+                height: 40px;
+            }
+            .user{
+                font-weight: bold;
+                color: #777;
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+        }//username
+        .drppdowsermenuUser{
+            min-width: 600px;
+            border: none;
+            padding: 20px;
+            top: 10px !important;
+            border: 1px solid #ddd;
+            &::before{
+                content: '';
+                position: absolute;
+                top: -20px;
+                right: 50px ;
+                border-style: solid;
+                border-width: 10px;
+                border-color: transparent transparent #ddd transparent;
+            }
+            .user-info{
+                h3{
+                    font-weight: bold;
+                }
+                p{
+                    color:#888;
+                }
+            }
+            .activities-list{
+                li{
+                    padding: 10px;
+                }
+            }// activities-list{
+            .user-links{
+                .link-box{
+                    background-color: #f3f3f3;
+                    padding: 10px ;
+                    border-radius: 6px;
+                    text-align: center;
+                    i{
+                        float: left;
+                        position: relative;
+                        top: 5px;
+                    }
+                }// .link-box{
+            }// .user-links{
+
+        } // .drppdownmenuNotifi     
+
+    } // end .usermenu-container
+
+}//end header
